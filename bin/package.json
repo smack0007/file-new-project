@@ -1,0 +1,11 @@
+{
+  "name": "file-new-project",
+  "version": "0.0.2",
+  "description": "File->New->Project",
+  "bin": {
+    "file-new-project": "main.js"
+  },
+  "repository": "https://github.com/smack0007/file-new-project.git",
+  "author": "smack0007 <zachary.snow@gmail.com>",
+  "license": "MIT"
+}
