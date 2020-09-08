@@ -7,7 +7,7 @@
     ],
     "files.exclude": {
         ".git": true,
-        "bin": true,
+        "bin/**/*.js": true,
         "node_modules": true,
         "spec": true,
     },
