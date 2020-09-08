@@ -1,6 +1,6 @@
 {
   "name": "file-new-project",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "File->New->Project",
   "bin": {
     "file-new-project": "main.js"
