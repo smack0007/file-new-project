@@ -1,15 +1,22 @@
 {
   "name": "file-new-project",
+  "version": "0.0.5",
   "description": "File->New->Project",
   "repository": "https://github.com/smack0007/file-new-project.git",
   "author": "smack0007 <zachary.snow@gmail.com>",
   "license": "MIT",
+  "keywords": [
+    "cli",
+    "create-project"
+  ],
+  "bin": {
+    "file-new-project": "main.js"
+  },
   "dependencies": {
     "chalk": "^4.1.0",
     "shelljs": "^0.8.4"
   },
   "devDependencies": {
-    "@types/chalk": "^2.2.0",
     "@types/jasmine": "^3.5.14",
     "@types/node": "^14.6.2",
     "@types/shelljs": "^0.8.8",
@@ -26,6 +33,6 @@
     "lint": "eslint src/**/*.ts",
     "start": "npm run build && node bin/main.js",
     "test": "tsc -p tsconfig.spec.json && jasmine --config=jasmine.json",
-    "release": "npm run build && npm run version --patch --cwd bin && npm run publish --cwd bin && git push --follow-tags"
+    "release": "npm run build && npm version patch && shx cp package.json ./bin && npm publish --prefix bin && git push --follow-tags"
   }
 }
