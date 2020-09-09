@@ -1,4 +1,3 @@
-bin/**/*.js
+bin/
 spec/
 node_modules/
-package-lock.json
