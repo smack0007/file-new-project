@@ -33,6 +33,9 @@
     "lint": "eslint src/**/*.ts",
     "start": "npm run build && node bin/main.js",
     "test": "tsc -p tsconfig.spec.json && jasmine --config=jasmine.json",
-    "release": "npm run build && npm version patch && shx cp package.json ./bin && npm publish bin && git push --follow-tags"
+    "release": "npm run build && shx cp package.json ./bin && npm publish bin && git push --follow-tags",
+    "release-patch": "npm version patch && npm run release",
+    "release-minor": "npm version minor && npm run release",
+    "release-major": "npm version major && npm run release"
   }
 }
