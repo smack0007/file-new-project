@@ -167,13 +167,7 @@
     // eslint-plugin-no-null
     "no-null/no-null": "error",
     // eslint
-    "brace-style": [
-      "error",
-      "stroustrup",
-      {
-        "allowSingleLine": true
-      }
-    ],
+    "brace-style": "error",
     "constructor-super": "error",
     "curly": [
       "error",
